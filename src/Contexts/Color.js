@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 
 // 새로운 Context를 만들때는 createContext 함수를 이용해 만든다. => 파라미터에는 해당 Context의 기본값을 저장.
+// createContext함수는 Provider과 Consumer를 반환한다.
 const ColorContext = createContext({
   state: { color: "black", subcolor: "red" },
   actions: {
